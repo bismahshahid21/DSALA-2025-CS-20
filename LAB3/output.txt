@@ -1,0 +1,29 @@
+--- Mini DB Engine (Lab 3) ---
+DB> CREATE TABLE users
+Enter number of columns: 3
+Col 1 (Name Type ConstraintFlag): id int 3
+Col 2 (Name Type ConstraintFlag): name string 2
+Col 3 (Name Type ConstraintFlag): age int 0
+Table created.
+DB> INSERT INTO users VALUES (1, Ali, 20)
+Record inserted.
+DB> INSERT INTO users VALUES (2, Sara, 21)
+Record inserted.
+DB> INSERT INTO users VALUES (2, John, 22)
+Error: Duplicate value in id!
+DB> SELECT * FROM users
+
+Table: users
+id      name    age
+------------------------------------------
+1       Ali     20
+2       Sara    21
+DB> SAVE
+Table saved to users.txt
+DB> LOAD users
+Table users loaded successfully.
+DB> EXIT
+
+--------------------------------
+Process exited after 430.5 seconds with return value 0
+Press any key to continue . . .
